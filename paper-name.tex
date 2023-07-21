@@ -1,6 +1,6 @@
 %! TeX program = xelatex
 %! TeX root = paper-name.tex
-\documentclass{lmcs}
+\documentclass[conference]{IEEEtran}
 
 % INPUTS
 \input{globals/packages}
@@ -11,11 +11,11 @@
 \input{globals/mathdefs}
 \input{globals/knowledges.kl}
 
+\input{globals/metadata}
 
 % DOCUMENT
 \begin{document}
 
-\input{globals/metadata}
 
 % FRONT MATTER
 \maketitle
@@ -29,10 +29,15 @@
 \section{Conclusion}
 
 % BACKMATTER
-\nocite{*}
-\bibliographystyle{alphaurl}
-\bibliography{globals/papers}
+\bibliographystyle{IEEEtran}
+\bibliography{globals/ressources}
 
-\appendix
+\appendices\pagenumbering{roman}
+\setlength\textwidth{390pt}
+\setlength\oddsidemargin{31pt}
+\onecolumn
+
+% APPENDIX
+
 
 \end{document}

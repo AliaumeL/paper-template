@@ -1,24 +1,53 @@
-\title[Short Title]{Long Title}
+\title{Long Title}
 
-\author[A.~Name1]{Alice Name1}[a]
-\author[B.~Name2]{Bob Name2}[a,b]
-\author[J.~Name3]{Josiah S.~Carberry\lmcsorcid{0000-0002-1825-0097}}[a]
-
-% affiliation 1 (automatically numbered a)
-\address{University 1, address1}	%optional
-% write emails for all authors having that affiliation
-\email{name1@email1, name2@email1, name3@email1}  %optional
-
-% affiliation 2 (automatically numbered b)
-\address{University 2, address2}	%optional
-\email{name2@email2}  %optional
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
 
 \date{\today}
 
 %\Copyright{Copyright Holder Name}
 
 %TODO mandatory; please add comma-separated list of keywords
-\keywords{Dummy keyword} 
+
+\newcommand{\keywords}{
+    \begin{IEEEkeywords}
+        component, formatting, style, styling, insert
+    \end{IEEEkeywords}
+}
 
 \newcommand{\acknowledge}{
     \thanks{Acknowledge}
@@ -29,3 +58,4 @@
         Abstract of the paper.
     \end{abstract}
 }
+
