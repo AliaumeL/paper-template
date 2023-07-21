@@ -1,26 +1,26 @@
 %! TeX program = xelatex
 %! TeX root = paper-name.tex
-\documentclass[a4paper,UKenglish,cleveref, autoref, thm-restate]{lipics-v2021}
+\documentclass{lmcs}
 
 % INPUTS
 \input{globals/packages}
 \input{globals/colorscheme}
 
-\bibliographystyle{plainurl}
 % CONFIG
-%\input{globals/macros}
-%\input{globals/mathdefs}
-%\input{globals/knowledges.kl}
-\input{globals/metadata}
+\input{globals/macros}
+\input{globals/mathdefs}
+\input{globals/knowledges.kl}
 
 
 % DOCUMENT
 \begin{document}
 
+\input{globals/metadata}
+
 % FRONT MATTER
 \maketitle
-%\makeabstract
-%\acknowledge
+\makeabstract
+\acknowledge
 
 
 % MAIN MATTER
@@ -30,6 +30,7 @@
 
 % BACKMATTER
 \nocite{*}
+\bibliographystyle{alphaurl}
 \bibliography{globals/papers}
 
 \appendix

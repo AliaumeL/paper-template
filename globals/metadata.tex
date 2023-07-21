@@ -1,29 +1,27 @@
-\title{Title of the document}
+\title[Short Title]{Long Title}
 
-\author{Jane {Open Access}}%
-       {Dummy University Computing Laboratory, [optional: Address],
-        Country \and
-        My second affiliation, Country \and
-        \url{http://www.myhomepage.edu}
-       }%
-       {johnqpublic@dummyuni.org}%
-       {https://orcid.org/0000-0002-1825-0097}%
-       {(Optional) author-specific funding acknowledgements}
-%TODO mandatory, please use full name; only 1 author per \author macro; first two parameters are mandatory, other parameters can be empty. Please provide at least the name of the affiliation and the country. The full address is optional. Use additional curly braces to indicate the correct name splitting when the last name consists of multiple name parts.
+\author[A.~Name1]{Alice Name1}[a]
+\author[B.~Name2]{Bob Name2}[a,b]
+\author[J.~Name3]{Josiah S.~Carberry\lmcsorcid{0000-0002-1825-0097}}[a]
 
-\titlerunning{Short title of the document}
+% affiliation 1 (automatically numbered a)
+\address{University 1, address1}	%optional
+% write emails for all authors having that affiliation
+\email{name1@email1, name2@email1, name3@email1}  %optional
+
+% affiliation 2 (automatically numbered b)
+\address{University 2, address2}	%optional
+\email{name2@email2}  %optional
+
 \date{\today}
 
-\Copyright{Copyright Holder Name}
+%\Copyright{Copyright Holder Name}
 
 %TODO mandatory; please add comma-separated list of keywords
 \keywords{Dummy keyword} 
-\category{} %optional, e.g. invited paper
-\relatedversion{} %optional, e.g. full version hosted on arXiv, HAL, or other respository/website
-
 
 \newcommand{\acknowledge}{
-    Acknowledge
+    \thanks{Acknowledge}
 }
 
 \newcommand{\makeabstract}{
@@ -31,18 +29,3 @@
         Abstract of the paper.
     \end{abstract}
 }
-
-%Editor-only macros:: begin (do not touch as author)%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\EventEditors{John Q. Open and Joan R. Access}
-\EventNoEds{2}
-\EventLongTitle{42nd Conference on Very Important Topics (CVIT 2016)}
-\EventShortTitle{CVIT 2016}
-\EventAcronym{CVIT}
-\EventYear{2016}
-\EventDate{December 24--27, 2016}
-\EventLocation{Little Whinging, United Kingdom}
-\EventLogo{}
-\SeriesVolume{42}
-\ArticleNo{23}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
