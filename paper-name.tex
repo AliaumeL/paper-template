@@ -1,14 +1,16 @@
 %! TeX program = xelatex
-\documentclass[a4paper,11pt]{article}
+%! TeX root = paper-name.tex
+\documentclass[a4paper,UKenglish,cleveref, autoref, thm-restate]{lipics-v2021}
 
 % INPUTS
 \input{globals/packages}
 \input{globals/colorscheme}
 
+\bibliographystyle{plainurl}
 % CONFIG
-\input{globals/macros}
-\input{globals/mathdefs}
-\input{globals/knowledges.kl}
+%\input{globals/macros}
+%\input{globals/mathdefs}
+%\input{globals/knowledges.kl}
 \input{globals/metadata}
 
 
@@ -17,8 +19,8 @@
 
 % FRONT MATTER
 \maketitle
-\makeabstract
-\acknowledge
+%\makeabstract
+%\acknowledge
 
 
 % MAIN MATTER
@@ -27,7 +29,8 @@
 \section{Conclusion}
 
 % BACKMATTER
-\printbibliography
+\nocite{*}
+\bibliography{globals/papers}
 
 \appendix
 
