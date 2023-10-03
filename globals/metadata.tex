@@ -1,10 +1,28 @@
 \title{Title of the document}
-\author{Author of the document}
+\papertitle{Title of the paper}
+\lefttitle{LaTeX\ Supplement}
+\righttitle{Mathematical Structures in Computer Science}
+
+
+\newcommand{\makeauthors}{
+    \begin{authgrp}
+    \author{Cambridge Author}
+    \affiliation{Electronic Products and Composition Group,\\
+            Printing Division, Cambridge University Press, CB2 2BS\\
+            \email{texline@cambridge.org}}
+    \end{authgrp}
+}
+
 \date{\today}
-\bibliography{globals/papers}
 
 \newcommand{\acknowledge}{
     Acknowledge
+}
+
+\newcommand{\paperkeywords}{
+    \begin{keywords}
+        Categorial grammars; cyclic orders; Lambek calculus; language parsing;
+    \end{keywords}
 }
 
 \newcommand{\makeabstract}{
@@ -12,3 +30,8 @@
         Abstract of the paper.
     \end{abstract}
 }
+
+\jnlPage{1}{00}
+\jnlDoiYr{2019}
+\doival{10.1017/xxxxx}
+\history{(Received xx xxx xxx; revised xx xxx xxx; accepted xx xxx xxx)}

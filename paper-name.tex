@@ -1,5 +1,5 @@
-%! TeX program = xelatex
-\documentclass[a4paper,11pt]{article}
+%! TeX program = pdflatex
+\documentclass{msc}
 
 % INPUTS
 \input{globals/packages}
@@ -14,11 +14,11 @@
 
 % DOCUMENT
 \begin{document}
-
 % FRONT MATTER
-\maketitle
+\makeauthors
 \makeabstract
-\acknowledge
+\paperkeywords
+\maketitle
 
 
 % MAIN MATTER
@@ -26,9 +26,15 @@
 
 \section{Conclusion}
 
-% BACKMATTER
-\printbibliography
+\section*{Akcnowledgements}
+\acknowledge
 
+% BACKMATTER
+%\printbibliography
+\bibliographystyle{msclike}
+\bibliography{globals/papers.bib}
+
+\clearpage
 \appendix
 
 \end{document}

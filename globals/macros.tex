@@ -27,21 +27,13 @@
 }
 
 % Common theorem styles
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{fact}[theorem]{Fact}
+\newtheorem{fact}[therm]{Fact}
 \theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{example}[theorem]{Example}
+\newtheorem{example}[therm]{Example}
 \theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
-\newtheorem{exercise}[theorem]{Exercise}
-\newtheorem{claim}[theorem]{Claim}
-\newtheorem{tool}[theorem]{Tool}
-\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{exercise}[therm]{Exercise}
+\newtheorem{tool}[therm]{Tool}
+\newtheorem{conjecture}[therm]{Conjecture}
 
 
 % Upgreek letters
@@ -56,23 +48,6 @@
   \expandafter\mathrm\expandafter{\the\cytoks}%
 }
 \makeatother
-
-% Comment on a definition/text
-\NewDocumentCommand{\comment}{m}{%
-    \footnote{#1}%
-}
-
-% Citation configuration
-\AtEveryBibitem{
-    % Removes issn, isbn, and
-    % unwanted items from the bibliography
-	\clearfield{issn}
-	\clearfield{isbn}
-	\clearfield{archivePrefix}
-	\clearfield{arxivId}
-	\clearfield{pmid}
-	\clearfield{eprint}
-}
 
 % Cite a knowledge
 \NewDocumentCommand{\citek}{ o m }{
