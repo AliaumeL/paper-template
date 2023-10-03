@@ -2,7 +2,6 @@
 
 This is a template repository to initialize research paper projects.
 
-## About the LMCS template
+## About the IEEETran template
 
-The LMCS template is taken from [the official LMCS website](https://lmcs.episciences.org/).
-
+The IEEETran template is taken from [the official IEEE website](https://www.ieee.org/conferences/publishing/templates.html).
