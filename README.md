@@ -42,15 +42,15 @@ The template does not impose a particular way of organising content, but
 encourages users to write macros, import packages, and define metadata in
 files placed in the `globals` directory.
 
-|--------|-------|
-|File Name | Description |
-|--------|---------|
+| File Name | Description |
+| --------- | ----------- |
 | `colorscheme.tex` | Defines specific colours used in the paper, using `xcolor` |
 | `packages.tex` | Imports the LaTeX packages used in the document, with specific options |
 | `macros.tex` | User-defined custom macros for content or document creation |
 | `mathdefs.tex` | User-defined custom macros for mathematical writing |
 | `papers.bib` | Bibliographic entries for the given paper |
 | `knowledge.kl` | [Knowledges][] used in the document |
+
 
 ## Provided Macros and Environments
 
