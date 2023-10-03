@@ -23,3 +23,5 @@ acknowledgements on the first page of the paper.
 The package requires to use [natbib][]
 to handle bibliography, which makes it differ from
 the other branches of this repository.
+
+[natbib]: https://ctan.org/pkg/natbib
