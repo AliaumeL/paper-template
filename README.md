@@ -15,6 +15,21 @@ This serves the dual purpose of setting up a clean writing environment
 with useful macros and sane packages, with the guarantee that migrating to
 the style of a specific journal or conference will be *less* painful.
 
+## Supported Styles
+
+Currently, the following styles are available:
+
+- [lipics][]
+- [lmcs][]
+- [IEEETran][]
+- [MSC][]
+
+
+[lipics]: https://github.com/dagstuhl-publishing/styles/tree/master
+[lmcs]: https://lmcs.episciences.org/
+[IEEETran]: https://www.ieee.org/conferences/publishing/templates.html
+[MSC]: https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/information/author-instructions
+
 ## How
 
 The repository contains one branch per LaTeX style, with the custom
